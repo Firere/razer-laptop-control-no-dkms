@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Razer Laptop Control
+Comment=Program to control your Razer laptop
+Categories=GNOME;GTK;
+Keywords=System;Utilities;
+Version=1.0
+Exec=/usr/bin/razercontrol-gui
+Terminal=false
+Type=Application
+Icon=/usr/share/razercontrol/logo1.png

@@ -13,6 +13,10 @@ cp data/devices/laptops.json /usr/share/razercontrol/
 cp data/udev/99-hidraw-permissions.rules /etc/udev/rules.d/
 cp razerdaemon.service /usr/lib/systemd/user/
 udevadm control --reload-rules
+cp src/gui.py /usr/bin/razercontrol-gui
+chmod +x /usr/bin/razercontrol-gui
+mv razercontrol.desktop /usr/share/applications/razercontrol.desktop
+mv assets/logo1.png /usr/share/razercontrol/logo1.png
 EOF
 systemctl --user enable razerdaemon.service
 systemctl --user start razerdaemon.service
