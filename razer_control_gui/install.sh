@@ -17,6 +17,8 @@ cp src/gui.py /usr/bin/razercontrol-gui
 chmod +x /usr/bin/razercontrol-gui
 mv razercontrol.desktop /usr/share/applications/razercontrol.desktop
 mv assets/logo1.png /usr/share/razercontrol/logo1.png
+mv assets/logo2.png /usr/share/razercontrol/logo2.png
+mv assets/logo3.ong /usr/share/razercontrol/logo3.png
 EOF
 systemctl --user enable razerdaemon.service
 systemctl --user start razerdaemon.service
